@@ -1,6 +1,6 @@
 # *Semaforo_Inteligente*
 Proyecto - Electrónica Digital I - Universidad Nacional de Colombia
-## Contenido
+## Contenido :scroll:
 ### Formulación
 + Identificación del problema
 + Datos
@@ -20,7 +20,7 @@ Proyecto - Electrónica Digital I - Universidad Nacional de Colombia
 ### Conclusiones 
 ### Referencias
 
-##  Formulación
+##  Formulación :memo:
 ### Identificación del problema
 Mejorar la seguridad vial en las intersecciones de las calles y avenidas, pues los accidentes de tráfico son una de las principales causas de lesiones y muertes en todo el mundo, y muchas de estas lesiones y muertes ocurren en las intersecciones donde los vehículos, los ciclistas y los peatones se cruzan.
 Con un sistema de semáforos adecuado, se puede reducir significativamente el número de accidentes y lesiones en las intersecciones, lo que a su vez puede ayudar a mejorar la calidad de vida de la comunidad. Además, al tener un sistema de semáforos funcionando a la par con dispositivos como sensores ultrasónicos, se pueden reducir los tiempos de espera y mejorar el flujo vehicular, además de asegurar el bienestar del peatón.
@@ -49,7 +49,7 @@ Otro caso de implementación de tecnologías con el fin de mejorar el tráfico y
 ### Posibles soluciones:
 Principalmente se propone una malla vial más inteligente, en donde los semáforos e intersecciones, posean sistemas digitales los cuales se compongan de sensores y nuevas tecnologías las cuales permitan detectar ya sea flujo de carros o de peatones y así dar prioridades ya sea para evitar tráfico como para permitir al peatón movilizarse de manera rápida y segura de acuerdo a las condiciones del momento, en dicha solución es importante detectar los niveles de tráfico y los tiempos de espera tanto del tráfico como de los peatones, para lo cual es importante poner en uso sistemas de conteo, sensores de detección y otras herramientas tanto digitales como análogas. 
 Como solución secundaria que apremia por la seguridad del peatón, podría llegarse a implementar un sistema que detecte los niveles de velocidad de los automotores, y de acuerdo con dicha información, si se es necesario, dar un aviso mediante sistemas inalámbricos a la autoridad competente y a su vez tanto al tráfico vial como peatonal de posibles peligros y/o accidentes.
-## Objetivos
+## Objetivos :white_check_mark:
 ### Objetivo principal:
 Implementar un sistema digital semiautomático para control de tráfico que reduzca el tiempo de espera de los peatones y estimule el flujo vehicular en diversas situaciones de movilidad.
 ### Objetivos secundarios:
@@ -68,7 +68,6 @@ Implementar un sistema digital semiautomático para control de tráfico que redu
 | Protoboard                      | $ 7 000               | 1           | $ 7 000            |
 | Mano de obra                    | $ 700 000             | 3           | $ 2 100 000        |
 | TOTAL                           |                       |             | $ 2 850 500        |
-
 
 
 
