@@ -56,7 +56,7 @@ Implementar un sistema digital semiautomático para control de tráfico que redu
 + Diseñar un sistema de sensores de ultrasonido que determinen el estado de tráfico mediante la detección de obstáculos y permitan intervenir en la decisión de los semáforos.
 + Adaptar un mecanismo manual mediante un pulsador para dar prioridad al paso de peatones teniendo en cuenta el estado de tráfico actual.
 + Implementar un contador descendente mediante un display 7 segmentos que establezca los cambios del semáforo tomando en cuenta las salidas de los sensores y el mecanismo manual, y permita visualizar los tiempos de espera de los peatones.
-## Presupuesto:
+## Presupuesto :money_with_wings:
 | Elemento                        | Precio unitario (COP) | Cantidad    | Precio total (COP) |
 | :-----------------------------: | :-------------------: | :---------: | :----------------: | 
 | Tarjeta FPGA Altera Cyclone IV  | $ 700 000             | 1           | $ 700 000          |
@@ -68,6 +68,11 @@ Implementar un sistema digital semiautomático para control de tráfico que redu
 | Protoboard                      | $ 7 000               | 1           | $ 7 000            |
 | Mano de obra                    | $ 700 000             | 3           | $ 2 100 000        |
 | TOTAL                           |                       |             | $ 2 850 500        |
+
+## Diagramas :chart_with_upwards_trend:
+### Diagrama de caja negra general:
+![Diagrama en blanco (1)](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/94d84d1d-f6a4-4804-87c7-56a65f1f6616)
+
 
 
 
