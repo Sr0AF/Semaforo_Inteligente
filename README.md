@@ -1,5 +1,10 @@
-# *Semaforo_Inteligente*
-Proyecto - Electrónica Digital I - Universidad Nacional de Colombia
+# *Semáforo_Inteligente*
+![SEMÁFORO INTELIGENTE (1)](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/e0a9e894-0962-451f-927e-ded29dadb078)
+
+- Proyecto - Electrónica Digital I
+- Profesor : Diego Alexander Tibaduiza Burgos
+- Bogotá DC - 2023-1S
+
 ## Contenido :scroll:
 ### Formulación
 + Identificación del problema
