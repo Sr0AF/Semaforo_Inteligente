@@ -1,0 +1,89 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "trigger",
+					"strict" : false
+				},
+				{
+					"name" : "S_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "S_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "S_o[3]",
+					"strict" : false
+				},
+				{
+					"name" : "S_o[4]",
+					"strict" : false
+				},
+				{
+					"name" : "S_o[5]",
+					"strict" : false
+				},
+				{
+					"name" : "S_o[6]",
+					"strict" : false
+				},
+				{
+					"name" : "gnd_1",
+					"strict" : false
+				},
+				{
+					"name" : "gnd_2",
+					"strict" : false
+				},
+				{
+					"name" : "red",
+					"strict" : false
+				},
+				{
+					"name" : "green",
+					"strict" : false
+				},
+				{
+					"name" : "yellow",
+					"strict" : false
+				},
+				{
+					"name" : "press",
+					"strict" : false
+				},
+				{
+					"name" : "yt",
+					"strict" : false
+				},
+				{
+					"name" : "red_peaton",
+					"strict" : false
+				},
+				{
+					"name" : "green_peaton",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "echo",
+					"strict" : false
+				},
+				{
+					"name" : "pulsad",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,684 @@
+|sem_rojo
+pulsad => anti_rebote:anti_rebote_pulsador.btn_in
+echo => sensor_quieto:HCRS04_sens.echo
+trigger << sensor_quieto:HCRS04_sens.trigger
+clk => div_frec:clk_1Hz.clk
+clk => div_frec:clk_500Hz.clk
+clk => div_frec:clk_10kHz.clk
+clk => sensor_quieto:HCRS04_sens.CLK
+S_o[0] << S[0].DB_MAX_OUTPUT_PORT_TYPE
+S_o[1] << S[1].DB_MAX_OUTPUT_PORT_TYPE
+S_o[2] << S[2].DB_MAX_OUTPUT_PORT_TYPE
+S_o[3] << S[3].DB_MAX_OUTPUT_PORT_TYPE
+S_o[4] << S[4].DB_MAX_OUTPUT_PORT_TYPE
+S_o[5] << S[5].DB_MAX_OUTPUT_PORT_TYPE
+S_o[6] << S[6].DB_MAX_OUTPUT_PORT_TYPE
+gnd_1 << gnd_1i.DB_MAX_OUTPUT_PORT_TYPE
+gnd_2 << gnd_2i.DB_MAX_OUTPUT_PORT_TYPE
+red << redd.DB_MAX_OUTPUT_PORT_TYPE
+green << greenn.DB_MAX_OUTPUT_PORT_TYPE
+yellow << yelloww.DB_MAX_OUTPUT_PORT_TYPE
+press << sensor_quieto:HCRS04_sens.y
+yt << sem_verde_45s:senal_verde_45s.carro
+red_peaton << redp.DB_MAX_OUTPUT_PORT_TYPE
+green_peaton << redd.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|div_frec:clk_1Hz
+clk => salida.CLK
+clk => cuenta[0].CLK
+clk => cuenta[1].CLK
+clk => cuenta[2].CLK
+clk => cuenta[3].CLK
+clk => cuenta[4].CLK
+clk => cuenta[5].CLK
+clk => cuenta[6].CLK
+clk => cuenta[7].CLK
+clk => cuenta[8].CLK
+clk => cuenta[9].CLK
+clk => cuenta[10].CLK
+clk => cuenta[11].CLK
+clk => cuenta[12].CLK
+clk => cuenta[13].CLK
+clk => cuenta[14].CLK
+clk => cuenta[15].CLK
+clk => cuenta[16].CLK
+clk => cuenta[17].CLK
+clk => cuenta[18].CLK
+clk => cuenta[19].CLK
+clk => cuenta[20].CLK
+clk => cuenta[21].CLK
+clk => cuenta[22].CLK
+clk => cuenta[23].CLK
+clk => cuenta[24].CLK
+clk => cuenta[25].CLK
+clk => cuenta[26].CLK
+clk => cuenta[27].CLK
+Nciclos[0] => Equal0.IN35
+Nciclos[1] => Equal0.IN34
+Nciclos[2] => Equal0.IN33
+Nciclos[3] => Equal0.IN32
+Nciclos[4] => Equal0.IN31
+Nciclos[5] => Equal0.IN30
+Nciclos[6] => Equal0.IN29
+Nciclos[7] => Equal0.IN28
+Nciclos[8] => Equal0.IN27
+Nciclos[9] => Equal0.IN26
+Nciclos[10] => Equal0.IN25
+Nciclos[11] => Equal0.IN24
+Nciclos[12] => Equal0.IN23
+Nciclos[13] => Equal0.IN22
+Nciclos[14] => Equal0.IN21
+Nciclos[15] => Equal0.IN20
+Nciclos[16] => Equal0.IN19
+Nciclos[17] => Equal0.IN18
+Nciclos[18] => Equal0.IN17
+Nciclos[19] => Equal0.IN16
+Nciclos[20] => Equal0.IN15
+Nciclos[21] => Equal0.IN14
+Nciclos[22] => Equal0.IN13
+Nciclos[23] => Equal0.IN12
+Nciclos[24] => Equal0.IN11
+Nciclos[25] => Equal0.IN10
+Nciclos[26] => Equal0.IN9
+Nciclos[27] => Equal0.IN8
+Nciclos[28] => Equal0.IN7
+Nciclos[29] => Equal0.IN6
+Nciclos[30] => Equal0.IN5
+Nciclos[31] => Equal0.IN4
+f <= salida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|div_frec:clk_500Hz
+clk => salida.CLK
+clk => cuenta[0].CLK
+clk => cuenta[1].CLK
+clk => cuenta[2].CLK
+clk => cuenta[3].CLK
+clk => cuenta[4].CLK
+clk => cuenta[5].CLK
+clk => cuenta[6].CLK
+clk => cuenta[7].CLK
+clk => cuenta[8].CLK
+clk => cuenta[9].CLK
+clk => cuenta[10].CLK
+clk => cuenta[11].CLK
+clk => cuenta[12].CLK
+clk => cuenta[13].CLK
+clk => cuenta[14].CLK
+clk => cuenta[15].CLK
+clk => cuenta[16].CLK
+clk => cuenta[17].CLK
+clk => cuenta[18].CLK
+clk => cuenta[19].CLK
+clk => cuenta[20].CLK
+clk => cuenta[21].CLK
+clk => cuenta[22].CLK
+clk => cuenta[23].CLK
+clk => cuenta[24].CLK
+clk => cuenta[25].CLK
+clk => cuenta[26].CLK
+clk => cuenta[27].CLK
+Nciclos[0] => Equal0.IN35
+Nciclos[1] => Equal0.IN34
+Nciclos[2] => Equal0.IN33
+Nciclos[3] => Equal0.IN32
+Nciclos[4] => Equal0.IN31
+Nciclos[5] => Equal0.IN30
+Nciclos[6] => Equal0.IN29
+Nciclos[7] => Equal0.IN28
+Nciclos[8] => Equal0.IN27
+Nciclos[9] => Equal0.IN26
+Nciclos[10] => Equal0.IN25
+Nciclos[11] => Equal0.IN24
+Nciclos[12] => Equal0.IN23
+Nciclos[13] => Equal0.IN22
+Nciclos[14] => Equal0.IN21
+Nciclos[15] => Equal0.IN20
+Nciclos[16] => Equal0.IN19
+Nciclos[17] => Equal0.IN18
+Nciclos[18] => Equal0.IN17
+Nciclos[19] => Equal0.IN16
+Nciclos[20] => Equal0.IN15
+Nciclos[21] => Equal0.IN14
+Nciclos[22] => Equal0.IN13
+Nciclos[23] => Equal0.IN12
+Nciclos[24] => Equal0.IN11
+Nciclos[25] => Equal0.IN10
+Nciclos[26] => Equal0.IN9
+Nciclos[27] => Equal0.IN8
+Nciclos[28] => Equal0.IN7
+Nciclos[29] => Equal0.IN6
+Nciclos[30] => Equal0.IN5
+Nciclos[31] => Equal0.IN4
+f <= salida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|div_frec:clk_10kHz
+clk => salida.CLK
+clk => cuenta[0].CLK
+clk => cuenta[1].CLK
+clk => cuenta[2].CLK
+clk => cuenta[3].CLK
+clk => cuenta[4].CLK
+clk => cuenta[5].CLK
+clk => cuenta[6].CLK
+clk => cuenta[7].CLK
+clk => cuenta[8].CLK
+clk => cuenta[9].CLK
+clk => cuenta[10].CLK
+clk => cuenta[11].CLK
+clk => cuenta[12].CLK
+clk => cuenta[13].CLK
+clk => cuenta[14].CLK
+clk => cuenta[15].CLK
+clk => cuenta[16].CLK
+clk => cuenta[17].CLK
+clk => cuenta[18].CLK
+clk => cuenta[19].CLK
+clk => cuenta[20].CLK
+clk => cuenta[21].CLK
+clk => cuenta[22].CLK
+clk => cuenta[23].CLK
+clk => cuenta[24].CLK
+clk => cuenta[25].CLK
+clk => cuenta[26].CLK
+clk => cuenta[27].CLK
+Nciclos[0] => Equal0.IN35
+Nciclos[1] => Equal0.IN34
+Nciclos[2] => Equal0.IN33
+Nciclos[3] => Equal0.IN32
+Nciclos[4] => Equal0.IN31
+Nciclos[5] => Equal0.IN30
+Nciclos[6] => Equal0.IN29
+Nciclos[7] => Equal0.IN28
+Nciclos[8] => Equal0.IN27
+Nciclos[9] => Equal0.IN26
+Nciclos[10] => Equal0.IN25
+Nciclos[11] => Equal0.IN24
+Nciclos[12] => Equal0.IN23
+Nciclos[13] => Equal0.IN22
+Nciclos[14] => Equal0.IN21
+Nciclos[15] => Equal0.IN20
+Nciclos[16] => Equal0.IN19
+Nciclos[17] => Equal0.IN18
+Nciclos[18] => Equal0.IN17
+Nciclos[19] => Equal0.IN16
+Nciclos[20] => Equal0.IN15
+Nciclos[21] => Equal0.IN14
+Nciclos[22] => Equal0.IN13
+Nciclos[23] => Equal0.IN12
+Nciclos[24] => Equal0.IN11
+Nciclos[25] => Equal0.IN10
+Nciclos[26] => Equal0.IN9
+Nciclos[27] => Equal0.IN8
+Nciclos[28] => Equal0.IN7
+Nciclos[29] => Equal0.IN6
+Nciclos[30] => Equal0.IN5
+Nciclos[31] => Equal0.IN4
+f <= salida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|anti_rebote:anti_rebote_pulsador
+clk => reg[0].CLK
+clk => reg[1].CLK
+clk => reg[2].CLK
+clk => reg[3].CLK
+btn_in => reg[0].DATAIN
+btn_out <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|pulsador:pulsador1
+p => q.CLK
+x => l$latch.LATCH_ENABLE
+x => q.ACLR
+l <= l$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|ff_jk:JK0
+CLK => Q_int.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+rst => Q_int.ACLR
+rst => Q_int.IN0
+preset => Q_int.IN1
+Q <= Q_int.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|ff_jk:JK1
+CLK => Q_int.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+rst => Q_int.ACLR
+rst => Q_int.IN0
+preset => Q_int.IN1
+Q <= Q_int.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|ff_jk:JK2
+CLK => Q_int.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+rst => Q_int.ACLR
+rst => Q_int.IN0
+preset => Q_int.IN1
+Q <= Q_int.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|ff_jk:JK3
+CLK => Q_int.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+rst => Q_int.ACLR
+rst => Q_int.IN0
+preset => Q_int.IN1
+Q <= Q_int.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|ff_jk:JK4
+CLK => Q_int.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+rst => Q_int.ACLR
+rst => Q_int.IN0
+preset => Q_int.IN1
+Q <= Q_int.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|ff_jk:JK5
+CLK => Q_int.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+rst => Q_int.ACLR
+rst => Q_int.IN0
+preset => Q_int.IN1
+Q <= Q_int.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|Incrementador:Incrementador_i
+q[0] => Equal0.IN11
+q[1] => Equal0.IN10
+q[2] => Equal0.IN9
+q[3] => Equal0.IN8
+q[4] => Equal0.IN7
+q[5] => Equal0.IN6
+CLK => i[0].CLK
+CLK => i[1].CLK
+i_f[0] <= i[0].DB_MAX_OUTPUT_PORT_TYPE
+i_f[1] <= i[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|sensor_quieto:HCRS04_sens
+echo => HCRS04:Sens.echo
+trigger <= HCRS04:Sens.Trigger
+CLK => div_frec:CLOCK_1kHz.clk
+CLK => HCRS04:Sens.clk
+y <= y_i.DB_MAX_OUTPUT_PORT_TYPE
+yy <= yy_i.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|sensor_quieto:HCRS04_sens|div_frec:CLOCK_1kHz
+clk => salida.CLK
+clk => cuenta[0].CLK
+clk => cuenta[1].CLK
+clk => cuenta[2].CLK
+clk => cuenta[3].CLK
+clk => cuenta[4].CLK
+clk => cuenta[5].CLK
+clk => cuenta[6].CLK
+clk => cuenta[7].CLK
+clk => cuenta[8].CLK
+clk => cuenta[9].CLK
+clk => cuenta[10].CLK
+clk => cuenta[11].CLK
+clk => cuenta[12].CLK
+clk => cuenta[13].CLK
+clk => cuenta[14].CLK
+clk => cuenta[15].CLK
+clk => cuenta[16].CLK
+clk => cuenta[17].CLK
+clk => cuenta[18].CLK
+clk => cuenta[19].CLK
+clk => cuenta[20].CLK
+clk => cuenta[21].CLK
+clk => cuenta[22].CLK
+clk => cuenta[23].CLK
+clk => cuenta[24].CLK
+clk => cuenta[25].CLK
+clk => cuenta[26].CLK
+clk => cuenta[27].CLK
+Nciclos[0] => Equal0.IN35
+Nciclos[1] => Equal0.IN34
+Nciclos[2] => Equal0.IN33
+Nciclos[3] => Equal0.IN32
+Nciclos[4] => Equal0.IN31
+Nciclos[5] => Equal0.IN30
+Nciclos[6] => Equal0.IN29
+Nciclos[7] => Equal0.IN28
+Nciclos[8] => Equal0.IN27
+Nciclos[9] => Equal0.IN26
+Nciclos[10] => Equal0.IN25
+Nciclos[11] => Equal0.IN24
+Nciclos[12] => Equal0.IN23
+Nciclos[13] => Equal0.IN22
+Nciclos[14] => Equal0.IN21
+Nciclos[15] => Equal0.IN20
+Nciclos[16] => Equal0.IN19
+Nciclos[17] => Equal0.IN18
+Nciclos[18] => Equal0.IN17
+Nciclos[19] => Equal0.IN16
+Nciclos[20] => Equal0.IN15
+Nciclos[21] => Equal0.IN14
+Nciclos[22] => Equal0.IN13
+Nciclos[23] => Equal0.IN12
+Nciclos[24] => Equal0.IN11
+Nciclos[25] => Equal0.IN10
+Nciclos[26] => Equal0.IN9
+Nciclos[27] => Equal0.IN8
+Nciclos[28] => Equal0.IN7
+Nciclos[29] => Equal0.IN6
+Nciclos[30] => Equal0.IN5
+Nciclos[31] => Equal0.IN4
+f <= salida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|sensor_quieto:HCRS04_sens|HCRS04:Sens
+clk => TriggerGen:Inst_TriggerGen.clk
+clk => counter:Inst_counter.clk
+echo => counter:Inst_counter.enable
+echo => echo_count[0].CLK
+echo => echo_count[1].CLK
+echo => echo_count[2].CLK
+echo => echo_count[3].CLK
+echo => echo_count[4].CLK
+echo => echo_count[5].CLK
+echo => echo_count[6].CLK
+echo => echo_count[7].CLK
+echo => echo_count[8].CLK
+echo => echo_count[9].CLK
+echo => echo_count[10].CLK
+echo => echo_count[11].CLK
+echo => echo_count[12].CLK
+echo => echo_count[13].CLK
+echo => echo_count[14].CLK
+echo => echo_count[15].CLK
+echo => echo_count[16].CLK
+echo => echo_count[17].CLK
+echo => echo_count[18].CLK
+echo => echo_count[19].CLK
+Trigger <= TriggerGen:Inst_TriggerGen.trigger
+prs <= distance_calculation:Inst_distance_calculation.presence
+
+
+|sem_rojo|sensor_quieto:HCRS04_sens|HCRS04:Sens|TriggerGen:Inst_TriggerGen
+clk => tick[0].CLK
+clk => tick[1].CLK
+clk => tick[2].CLK
+clk => tick[3].CLK
+clk => tick[4].CLK
+clk => tick[5].CLK
+clk => tick[6].CLK
+clk => tick[7].CLK
+clk => tick[8].CLK
+clk => tick[9].CLK
+clk => tick[10].CLK
+clk => tick[11].CLK
+clk => tick[12].CLK
+clk => tick[13].CLK
+clk => tick[14].CLK
+clk => tick[15].CLK
+clk => tick[16].CLK
+clk => tick[17].CLK
+clk => tick[18].CLK
+clk => tick[19].CLK
+trigger <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|sensor_quieto:HCRS04_sens|HCRS04:Sens|counter:Inst_counter
+clk => tick[0].CLK
+clk => tick[1].CLK
+clk => tick[2].CLK
+clk => tick[3].CLK
+clk => tick[4].CLK
+clk => tick[5].CLK
+clk => tick[6].CLK
+clk => tick[7].CLK
+clk => tick[8].CLK
+clk => tick[9].CLK
+clk => tick[10].CLK
+clk => tick[11].CLK
+clk => tick[12].CLK
+clk => tick[13].CLK
+clk => tick[14].CLK
+clk => tick[15].CLK
+clk => tick[16].CLK
+clk => tick[17].CLK
+clk => tick[18].CLK
+clk => tick[19].CLK
+reset => tick[0].ACLR
+reset => tick[1].ACLR
+reset => tick[2].ACLR
+reset => tick[3].ACLR
+reset => tick[4].ACLR
+reset => tick[5].ACLR
+reset => tick[6].ACLR
+reset => tick[7].ACLR
+reset => tick[8].ACLR
+reset => tick[9].ACLR
+reset => tick[10].ACLR
+reset => tick[11].ACLR
+reset => tick[12].ACLR
+reset => tick[13].ACLR
+reset => tick[14].ACLR
+reset => tick[15].ACLR
+reset => tick[16].ACLR
+reset => tick[17].ACLR
+reset => tick[18].ACLR
+reset => tick[19].ACLR
+enable => tick[19].ENA
+enable => tick[18].ENA
+enable => tick[17].ENA
+enable => tick[16].ENA
+enable => tick[15].ENA
+enable => tick[14].ENA
+enable => tick[13].ENA
+enable => tick[12].ENA
+enable => tick[11].ENA
+enable => tick[10].ENA
+enable => tick[9].ENA
+enable => tick[8].ENA
+enable => tick[7].ENA
+enable => tick[6].ENA
+enable => tick[5].ENA
+enable => tick[4].ENA
+enable => tick[3].ENA
+enable => tick[2].ENA
+enable => tick[1].ENA
+enable => tick[0].ENA
+q[0] <= tick[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= tick[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= tick[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= tick[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= tick[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= tick[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= tick[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= tick[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= tick[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= tick[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= tick[10].DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= tick[11].DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= tick[12].DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= tick[13].DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= tick[14].DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= tick[15].DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= tick[16].DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= tick[17].DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= tick[18].DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= tick[19].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|sensor_quieto:HCRS04_sens|HCRS04:Sens|distance_calculation:Inst_distance_calculation
+echo_count[0] => LessThan0.IN40
+echo_count[1] => LessThan0.IN39
+echo_count[2] => LessThan0.IN38
+echo_count[3] => LessThan0.IN37
+echo_count[4] => LessThan0.IN36
+echo_count[5] => LessThan0.IN35
+echo_count[6] => LessThan0.IN34
+echo_count[7] => LessThan0.IN33
+echo_count[8] => LessThan0.IN32
+echo_count[9] => LessThan0.IN31
+echo_count[10] => LessThan0.IN30
+echo_count[11] => LessThan0.IN29
+echo_count[12] => LessThan0.IN28
+echo_count[13] => LessThan0.IN27
+echo_count[14] => LessThan0.IN26
+echo_count[15] => LessThan0.IN25
+echo_count[16] => LessThan0.IN24
+echo_count[17] => LessThan0.IN23
+echo_count[18] => LessThan0.IN22
+echo_count[19] => LessThan0.IN21
+presence <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|sem_verde_45s:senal_verde_45s
+CLK => carro~reg0.CLK
+q[0] => LessThan0.IN12
+q[1] => LessThan0.IN11
+q[2] => LessThan0.IN10
+q[3] => LessThan0.IN9
+q[4] => LessThan0.IN8
+q[5] => LessThan0.IN7
+presencia => process_0.IN1
+x => process_0.IN0
+y => process_0.IN1
+carro <= carro~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|binario_a_bcd:BCD
+binario[0] => bcd[0].DATAIN
+binario[1] => LessThan2.IN8
+binario[1] => Add2.IN8
+binario[1] => temp.DATAA
+binario[2] => LessThan1.IN8
+binario[2] => Add1.IN8
+binario[2] => temp.DATAA
+binario[3] => LessThan0.IN6
+binario[3] => Add0.IN6
+binario[3] => temp.DATAA
+binario[4] => LessThan0.IN5
+binario[4] => Add0.IN5
+binario[4] => temp.DATAA
+binario[5] => LessThan0.IN4
+binario[5] => Add0.IN4
+binario[5] => temp.DATAA
+bcd[0] <= binario[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd[1] <= temp.DB_MAX_OUTPUT_PORT_TYPE
+bcd[2] <= temp.DB_MAX_OUTPUT_PORT_TYPE
+bcd[3] <= temp.DB_MAX_OUTPUT_PORT_TYPE
+bcd[4] <= temp.DB_MAX_OUTPUT_PORT_TYPE
+bcd[5] <= temp.DB_MAX_OUTPUT_PORT_TYPE
+bcd[6] <= temp.DB_MAX_OUTPUT_PORT_TYPE
+bcd[7] <= <GND>
+
+
+|sem_rojo|bcd_to_7seg:seg7_1
+bcd_in[0] => Mux0.IN19
+bcd_in[0] => Mux1.IN19
+bcd_in[0] => Mux2.IN19
+bcd_in[0] => Mux3.IN19
+bcd_in[0] => Mux4.IN19
+bcd_in[0] => Mux5.IN19
+bcd_in[0] => Mux6.IN19
+bcd_in[1] => Mux0.IN18
+bcd_in[1] => Mux1.IN18
+bcd_in[1] => Mux2.IN18
+bcd_in[1] => Mux3.IN18
+bcd_in[1] => Mux4.IN18
+bcd_in[1] => Mux5.IN18
+bcd_in[1] => Mux6.IN18
+bcd_in[2] => Mux0.IN17
+bcd_in[2] => Mux1.IN17
+bcd_in[2] => Mux2.IN17
+bcd_in[2] => Mux3.IN17
+bcd_in[2] => Mux4.IN17
+bcd_in[2] => Mux5.IN17
+bcd_in[2] => Mux6.IN17
+bcd_in[3] => Mux0.IN16
+bcd_in[3] => Mux1.IN16
+bcd_in[3] => Mux2.IN16
+bcd_in[3] => Mux3.IN16
+bcd_in[3] => Mux4.IN16
+bcd_in[3] => Mux5.IN16
+bcd_in[3] => Mux6.IN16
+seg_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sem_rojo|bcd_to_7seg:seg7_2
+bcd_in[0] => Mux0.IN19
+bcd_in[0] => Mux1.IN19
+bcd_in[0] => Mux2.IN19
+bcd_in[0] => Mux3.IN19
+bcd_in[0] => Mux4.IN19
+bcd_in[0] => Mux5.IN19
+bcd_in[0] => Mux6.IN19
+bcd_in[1] => Mux0.IN18
+bcd_in[1] => Mux1.IN18
+bcd_in[1] => Mux2.IN18
+bcd_in[1] => Mux3.IN18
+bcd_in[1] => Mux4.IN18
+bcd_in[1] => Mux5.IN18
+bcd_in[1] => Mux6.IN18
+bcd_in[2] => Mux0.IN17
+bcd_in[2] => Mux1.IN17
+bcd_in[2] => Mux2.IN17
+bcd_in[2] => Mux3.IN17
+bcd_in[2] => Mux4.IN17
+bcd_in[2] => Mux5.IN17
+bcd_in[2] => Mux6.IN17
+bcd_in[3] => Mux0.IN16
+bcd_in[3] => Mux1.IN16
+bcd_in[3] => Mux2.IN16
+bcd_in[3] => Mux3.IN16
+bcd_in[3] => Mux4.IN16
+bcd_in[3] => Mux5.IN16
+bcd_in[3] => Mux6.IN16
+seg_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
