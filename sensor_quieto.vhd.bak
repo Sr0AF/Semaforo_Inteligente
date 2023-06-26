@@ -1,0 +1,95 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity prueba is
+
+    Port ( x : in std_logic;
+			  CLK : in std_logic;
+			  y : out std_logic
+			  
+			  );
+			  
+			  
+end prueba;
+
+architecture pruebad of prueba is
+
+	signal CLK_1Hz,CLK_10kHz,x_i,y_i : std_logic;
+	signal i : integer range 0 to 6 := 0;
+	
+component div_frec is
+	
+	
+	port(
+	
+		clk: in  std_logic;
+		Nciclos: in	integer;			
+		
+		
+		f: out std_logic
+		
+		
+		);
+	
+	
+	
+	
+end component;
+
+component anti_rebotee
+
+	port (
+        clk	: in std_logic;
+		  btn_in : in std_logic;
+	     btn_out	: out std_logic);
+
+end component;
+	 
+
+begin
+	
+	
+	
+	CLOCK_1kHz : div_frec port map(CLK, 25000000, CLK_1Hz);
+	
+	process(CLK_1Hz)
+	
+	begin
+		
+		if rising_edge(CLK_1Hz) then
+		
+			if x = '1' then
+		
+				if (i < 5) then
+		
+					i <= i+1;
+		
+					y_i <='0';
+					
+				
+				else 
+				
+					y_i <= '1';
+					
+					i <= 0;
+				
+				
+				
+				end if;
+				
+			else 
+			
+				i <= 0;
+				
+				y_i <= '0';
+			
+			end if;
+			
+		end if;
+		
+	end process;
+	
+	y <= not y_i;
+	
+		
+end pruebad;

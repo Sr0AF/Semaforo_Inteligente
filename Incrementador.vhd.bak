@@ -1,0 +1,45 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity Incrementador is
+
+    port (
+        q : in  std_logic_vector(5 downto 0);
+		  CLK : in std_logic;
+        i : out integer range 0 to 3 
+    );
+	 
+end entity Incrementador;
+
+architecture count of Incrementador is
+
+process(Q_i,CLK)
+	 
+	 begin
+	 
+	 
+	 if rising_edge(CLK) then
+	 
+		if Q_i = "000000"  then 
+		
+			i <= i+1;
+			
+		else 
+		
+			i <= i;
+		
+		end if;
+	 
+		if (i > 2) then
+		
+			i <= 0;
+		
+		end if;
+	
+	end if;
+	 
+	 end process;
+	 
+end architecture count;

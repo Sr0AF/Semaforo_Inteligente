@@ -1,0 +1,265 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+
+entity contador is 
+
+
+	port(
+	
+	bton : in std_logic;
+	
+	clk : in std_logic;
+	
+	rest : in std_logic;
+	
+	S_o : out std_logic_vector(6 downto 0);
+	
+	gnd_1,gnd_2 : out std_logic
+	
+	
+	);
+	
+end contador;
+
+
+
+architecture cuenta of contador is
+
+
+
+signal clk1,clk2,clk3,rst,resett,btnn,boton,boton_2,btn,reset,gnd_1i,gnd_2i,preset: std_logic;
+signal digit_sel: std_logic :='0';
+signal num: std_logic_vector(7 downto 0);
+signal BCD_1,BCD_2 : std_logic_vector (3 downto 0);
+signal seg_1,seg_2,S : std_logic_vector (6 downto 0);
+
+
+signal Q: STD_LOGIC_VECTOR (5 downto 0) := "101110";
+   
+
+signal Q_i: STD_LOGIC_VECTOR (5 downto 0);
+   
+
+
+
+
+component pulsador is
+
+	
+	
+	port(
+
+	p : in std_logic;
+	l : out std_logic
+
+
+	);
+	
+	
+end component;
+
+
+
+
+component anti_rebote is
+
+	port (
+        clk	: in std_logic;
+		  btn_in : in std_logic;
+	     btn_out	: out std_logic);
+
+
+end component;
+
+
+
+component div_frec is
+
+	port(
+	
+		clk: in  std_logic;
+		Nciclos: in	integer;			
+		
+		
+		f: out std_logic);
+
+
+
+end component;
+
+
+component ff_jk is 
+
+Port ( CLK : in  STD_LOGIC;
+           J   : in  STD_LOGIC;
+           K   : in  STD_LOGIC;
+			  rst :in STD_LOGIC;
+			  preset : in STD_LOGIC;
+           Q   : out STD_LOGIC);
+			  
+
+
+end component; 
+
+
+component bcd_a_7seg is
+
+
+	port (
+    bcd_in : in std_logic_vector(3 downto 0);
+    seg_out : out std_logic_vector(6 downto 0)
+	);
+
+
+end component;
+
+
+
+
+component binario_a_bcd is
+
+
+    Port ( binario : in  STD_LOGIC_VECTOR (5 downto 0);
+	 
+	 
+	 
+           bcd : out  STD_LOGIC_VECTOR (7 downto 0)
+			  
+			  
+			  );
+			  
+
+
+
+end component;
+
+begin 
+
+	btn <= not bton;
+	reset <= not rest;
+
+	clk_1Hz : div_frec port map(clk, 25000000, clk1);
+	clk_500Hz : div_frec port map(clk, 50000, clk2);
+	clk_10kHz : div_frec port map(clk, 2500, clk3);
+	
+	
+	anti_rebote_btn : anti_rebote port map(clk2, btn, boton);
+	anti_rebote_reset : anti_rebote port map(clk2, reset , rst);
+	
+	
+	
+	preset <= (not Q(0)) and (not Q(1)) and (not Q(2)) and (not Q(3)) and (not Q(4)) and (not Q(5));
+	
+	
+	
+	
+	pulsador1 : pulsador port map(boton,boton_2);
+	 
+	
+	 JK0 : ff_jk port map (clk1 and (not boton_2),  '1', '1', rst or preset, '0', Q(0));
+    JK1 : ff_jk port map (clk1 and (not boton_2), Q(0) , Q(0)  , '0', preset or reset,  Q(1));
+    JK2 : ff_jk port map (clk1 and (not boton_2), Q(0) and Q(1) , Q(0) and Q(1) , rst or preset, '0',  Q(2));
+    JK3 : ff_jk port map (clk1 and (not boton_2), Q(0) and Q(1) and Q(2)  , Q(0) and Q(1) and Q(2)  , rst or preset, '0',  Q(3));
+    JK4 : ff_jk port map (clk1 and (not boton_2), Q(0) and Q(1) and Q(2) and Q(3) , Q(0) and Q(1) and Q(2) and Q(3) , '0', preset or reset  , Q(4));
+    JK5 : ff_jk port map (clk1 and (not boton_2), Q(0) and Q(1) and Q(2) and Q(3) and Q(4) , Q(0) and Q(1) and Q(2) and Q(3) and Q(4) , rst or preset, '0',  Q(5));
+    
+    
+	 
+	
+	 
+
+    
+    Q_i(5)<=  not Q(5) ;
+	 Q_i(4)<=  not Q(4);
+	 Q_i(3)<=  not Q(3);
+	 Q_i(2)<=  not Q(2);
+	 Q_i(1)<=  not Q(1);
+	 Q_i(0)<=  not Q(0);
+	
+	
+	BCD : binario_a_bcd port map(Q_i,num);
+	
+	BCD_1 <= num(3 downto 0);
+	BCD_2 <= num(7 downto 4);
+	
+	
+	seg7_1 : bcd_a_7seg port map(BCD_1,seg_1);
+	
+	seg7_2 : bcd_a<_7seg port map(BCD_2,seg_2);
+	
+	
+	
+	
+	
+	
+	process(clk3)
+	
+	
+	
+begin
+
+
+    if rising_edge(clk3) then
+	 
+	 
+	 
+        if digit_sel = '0' then 
+		  
+		  
+				gnd_1i <= '1';
+				
+				gnd_2i <= '0';
+		  
+		  
+            S <= seg_1;
+				
+				
+            digit_sel <= '1';
+				
+        else 
+		  
+		  
+		  
+				gnd_1i <= '0';
+				
+				gnd_2i <= '1';
+		  
+            S <= seg_2;
+				
+				
+            digit_sel <= '0';
+				
+				
+        end if;
+		  
+	
+	
+		  
+	
+		  
+    end if;
+	 
+	 
+	 
+	 for i in S'range loop
+	
+    S_o(i) <= not S(i);
+	 
+	 end loop;
+	
+	 
+end process;
+	
+	
+	
+	 
+	gnd_1 <= not gnd_1i;
+	gnd_2 <= not gnd_2i;
+	
+	
+	
+	
+end architecture;
