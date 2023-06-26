@@ -1,0 +1,365 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'div_frec:clk_10kHz|salida'
+Slack : -15.660
+TNS   : -109.244
+
+Type  : Slow 1200mV 85C Model Setup 'div_frec:clk_1Hz|salida'
+Slack : -14.699
+TNS   : -129.227
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.644
+TNS   : -310.118
+
+Type  : Slow 1200mV 85C Model Setup 'sensor_quieto:HCRS04_sens|div_frec:CLOCK_1kHz|salida'
+Slack : -3.386
+TNS   : -18.676
+
+Type  : Slow 1200mV 85C Model Setup 'Incrementador:Incrementador_i|i[0]'
+Slack : -2.047
+TNS   : -2.047
+
+Type  : Slow 1200mV 85C Model Setup 'echo'
+Slack : -1.078
+TNS   : -13.342
+
+Type  : Slow 1200mV 85C Model Setup 'div_frec:clk_500Hz|salida'
+Slack : -0.470
+TNS   : -0.609
+
+Type  : Slow 1200mV 85C Model Setup 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'sensor_quieto:HCRS04_sens|div_frec:CLOCK_1kHz|salida'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.465
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_frec:clk_10kHz|salida'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_frec:clk_1Hz|salida'
+Slack : 0.485
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_frec:clk_500Hz|salida'
+Slack : 0.536
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'echo'
+Slack : 0.894
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Incrementador:Incrementador_i|i[0]'
+Slack : 1.679
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'div_frec:clk_1Hz|salida'
+Slack : -13.372
+TNS   : -77.571
+
+Type  : Slow 1200mV 85C Model Recovery 'clk'
+Slack : -3.194
+TNS   : -59.415
+
+Type  : Slow 1200mV 85C Model Recovery 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : -3.155
+TNS   : -3.155
+
+Type  : Slow 1200mV 85C Model Removal 'div_frec:clk_1Hz|salida'
+Slack : 1.252
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : 1.332
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'clk'
+Slack : 2.497
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -193.336
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'echo'
+Slack : -3.000
+TNS   : -31.253
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_frec:clk_10kHz|salida'
+Slack : -1.487
+TNS   : -14.870
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_frec:clk_1Hz|salida'
+Slack : -1.487
+TNS   : -13.383
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sensor_quieto:HCRS04_sens|div_frec:CLOCK_1kHz|salida'
+Slack : -1.487
+TNS   : -8.922
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_frec:clk_500Hz|salida'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Incrementador:Incrementador_i|i[0]'
+Slack : 0.475
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_frec:clk_10kHz|salida'
+Slack : -14.713
+TNS   : -102.202
+
+Type  : Slow 1200mV 0C Model Setup 'div_frec:clk_1Hz|salida'
+Slack : -13.779
+TNS   : -121.050
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -4.346
+TNS   : -273.044
+
+Type  : Slow 1200mV 0C Model Setup 'sensor_quieto:HCRS04_sens|div_frec:CLOCK_1kHz|salida'
+Slack : -3.083
+TNS   : -17.029
+
+Type  : Slow 1200mV 0C Model Setup 'Incrementador:Incrementador_i|i[0]'
+Slack : -1.837
+TNS   : -1.837
+
+Type  : Slow 1200mV 0C Model Setup 'echo'
+Slack : -1.008
+TNS   : -12.036
+
+Type  : Slow 1200mV 0C Model Setup 'div_frec:clk_500Hz|salida'
+Slack : -0.341
+TNS   : -0.383
+
+Type  : Slow 1200mV 0C Model Setup 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'sensor_quieto:HCRS04_sens|div_frec:CLOCK_1kHz|salida'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_frec:clk_10kHz|salida'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_frec:clk_1Hz|salida'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_frec:clk_500Hz|salida'
+Slack : 0.501
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'echo'
+Slack : 0.897
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Incrementador:Incrementador_i|i[0]'
+Slack : 1.520
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'div_frec:clk_1Hz|salida'
+Slack : -12.464
+TNS   : -72.137
+
+Type  : Slow 1200mV 0C Model Recovery 'clk'
+Slack : -2.941
+TNS   : -54.719
+
+Type  : Slow 1200mV 0C Model Recovery 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : -2.939
+TNS   : -2.939
+
+Type  : Slow 1200mV 0C Model Removal 'div_frec:clk_1Hz|salida'
+Slack : 1.097
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : 1.309
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : 2.330
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -193.336
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'echo'
+Slack : -3.000
+TNS   : -31.253
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_frec:clk_10kHz|salida'
+Slack : -1.487
+TNS   : -14.916
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_frec:clk_1Hz|salida'
+Slack : -1.487
+TNS   : -13.383
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sensor_quieto:HCRS04_sens|div_frec:CLOCK_1kHz|salida'
+Slack : -1.487
+TNS   : -8.922
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_frec:clk_500Hz|salida'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Incrementador:Incrementador_i|i[0]'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_frec:clk_10kHz|salida'
+Slack : -6.200
+TNS   : -43.094
+
+Type  : Fast 1200mV 0C Model Setup 'div_frec:clk_1Hz|salida'
+Slack : -5.833
+TNS   : -51.404
+
+Type  : Fast 1200mV 0C Model Setup 'sensor_quieto:HCRS04_sens|div_frec:CLOCK_1kHz|salida'
+Slack : -1.565
+TNS   : -8.668
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.435
+TNS   : -75.833
+
+Type  : Fast 1200mV 0C Model Setup 'Incrementador:Incrementador_i|i[0]'
+Slack : -0.337
+TNS   : -0.337
+
+Type  : Fast 1200mV 0C Model Setup 'div_frec:clk_500Hz|salida'
+Slack : -0.005
+TNS   : -0.005
+
+Type  : Fast 1200mV 0C Model Setup 'echo'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'sensor_quieto:HCRS04_sens|div_frec:CLOCK_1kHz|salida'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_frec:clk_10kHz|salida'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_frec:clk_1Hz|salida'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_frec:clk_500Hz|salida'
+Slack : 0.211
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'echo'
+Slack : 0.232
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Incrementador:Incrementador_i|i[0]'
+Slack : 0.726
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'div_frec:clk_1Hz|salida'
+Slack : -5.237
+TNS   : -30.471
+
+Type  : Fast 1200mV 0C Model Recovery 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : -0.895
+TNS   : -0.895
+
+Type  : Fast 1200mV 0C Model Recovery 'clk'
+Slack : -0.860
+TNS   : -14.813
+
+Type  : Fast 1200mV 0C Model Removal 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : 0.558
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'div_frec:clk_1Hz|salida'
+Slack : 0.594
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clk'
+Slack : 1.023
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -139.402
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'echo'
+Slack : -3.000
+TNS   : -24.197
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_frec:clk_10kHz|salida'
+Slack : -1.000
+TNS   : -10.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_frec:clk_1Hz|salida'
+Slack : -1.000
+TNS   : -9.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sensor_quieto:HCRS04_sens|div_frec:CLOCK_1kHz|salida'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_frec:clk_500Hz|salida'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'anti_rebote:anti_rebote_pulsador|reg[0]'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Incrementador:Incrementador_i|i[0]'
+Slack : 0.406
+TNS   : 0.000
+
+------------------------------------------------------------
