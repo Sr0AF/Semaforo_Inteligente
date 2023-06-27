@@ -80,3 +80,15 @@ Implementar un sistema digital semiautomático para control de tráfico que redu
 El sistema digital tiene como principio de funcionamiento detectar el nivel de tráfico presente en la vía gracias al sensor de ultrasonido, es por ello que se hace valer de un subsistema denominado "Detección" el cual relaciona un rango de distancia para el cual se detecta un vehiculo, posteriormente se evalúa el tiempo en el que dicho vehiculo se mantiene estático mediante el uso de un contador el cual enviá una señal lógica de 1 al sistema de control cuando el tiempo supera los 5 segundos. Por otro el pulsador destinado a los peatones envia una señal lógica de 1 directamente al sistema de control cuando es pulsado. El sistema de control evalúa las señales de entrada provenientes de el sensor y el pulsador para determinar los tiempos de cambio de estado del semáforo de los cuales se encargará el temporizador para que así sean visibles mediante los display 7 segmentos. A continuación se muestra los subsistemas que conforman del diagrama de caja negra general:
 ![DC_GENERAL](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/73d99e0d-7977-4729-a190-00d5f20c4608)
 
+### Contador
+Diseñado principalmente para establecer un tiempo de 5 segundos durante el cual el sensor se mantiene activo y de esta forma confirmar el estado estático de un vehículo, de esta forma se puede interpretar el nivel de tráfico de acuerdo a la distancia a la cual se ubica el sensor respecto del semáforo, el tiempo se define mediante un contador asíncrono de 3 flip flops y un reset establecido en el numero binario 101 como se muestra a continuación.
+![DC_CONTADOR](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/9ef75346-16eb-4fc1-85d2-2c4d3a560436)
+
+![ESQ_CONTADOR](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/288c5324-b154-4324-8483-17b12cdc340c)
+
+### Temporizador
+Se encarga de establecer los tiempos correspondientes a los cambios del semáforo tanto de peatones como de vehículos y decodificarlos para que puedan ser visibles mediante los display 7 segmentos, el sitema se conforma de un divisor de frecuencia para el clk, un contador descendente con 6 flip flops, 3 asignados para cada dígito, un codificador de binario a BCD, un multiplexor que recibe una señal de control sincronizada a 1 Hz, un codificador BCD a 7 segmentos y los dos display.
+
+![DC_TEMPORIZADOR](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/dd7e54ae-4507-47d0-aff2-ad8bafe0a7c9)
+
+
