@@ -97,4 +97,10 @@ Se encarga de establecer los tiempos correspondientes a los cambios del semáfor
 ![DC_TEMPORIZADOR](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/dd7e54ae-4507-47d0-aff2-ad8bafe0a7c9)
 
 ### Control
+El sistema se control se encarga de establecer los tiempos para el temporizador y a su vez, evalúa el tiempo actual en el que se encuentran para determinar una decisión en los cambios de leds para los semáforos, el incrementador se encarga de aumentar el tiempo durante el cual el semáforo de los vehículos se encuentra en verde
+
+![DC_CONTROL](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/852a0a74-0c9b-441f-a605-909111a9b5a3)
+
+
+
 
