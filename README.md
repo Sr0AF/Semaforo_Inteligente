@@ -96,4 +96,5 @@ Se encarga de establecer los tiempos correspondientes a los cambios del semáfor
 
 ![DC_TEMPORIZADOR](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/dd7e54ae-4507-47d0-aff2-ad8bafe0a7c9)
 
+### Control
 
