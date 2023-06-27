@@ -21,8 +21,6 @@
 + Diagrama de flujo
 + Máquina de estados
 ### Implementación
-### Problemas presentados
-### Conclusiones 
 ### Referencias
 
 ##  Formulación :memo:
@@ -102,8 +100,40 @@ El sistema se control se encarga de establecer los tiempos para el temporizador 
 ![DC_CONTROL](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/852a0a74-0c9b-441f-a605-909111a9b5a3)
 
 ### Diagrama de flujo
+Tiempo --- T
+
+Entradas:
+Sensor --- S;
+Pulsador --- P;
+
+Salidas:
+Led verde vehiculos --- V;
+Led amarillo vehículos --- A;
+Led rojo vehiculos --- R;
+Led verde peatones --- VP;
+Led rojo peatones --- RP;
 
 ![DF](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/8faaa101-05cb-47c8-8094-a378a52a1cc7)
 
 ### Máquina de estados:
 ![FSM](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/59e102d9-f9bb-44cc-8967-53c4e6e2aa6c)
+## Implementación 
+
+https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/e7e44680-768e-478b-9a09-25c495a67b71
+
+https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/f46b4684-0581-46bf-adfa-3d8f5e8bb2ae
+
+https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/81bf438a-7b2d-41cd-a227-1e080d8db073
+
+https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/dae94fed-a89a-4c39-aca9-cb55cbb4752a
+
+https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/52f14d36-52af-4258-9634-29a04fe88678
+
+## Referencias
+
+[1] D. Pardo – Corresponsal de BBC mundo en Colombia. “Por qué Bogotá tiene el peor tráfico de América Latina y en qué se diferencia de otras grandes ciudades”. Disponible en: https://www.bbc.com/mundo/noticias-america-latina-62829646. Accedido el 06 de mayo 2023.
+[2] SISTEMAS REGULACIÓN TRÁFICO EN BARCELONA. “SISTEMAS DE REGULACIÓN DEL TRÁFICO DE BARCELONA”. Disponible en: https://www.grupoetra.com/portfolio-item/sistemas-de-regulacion-del-trafico-de-barcelona/. Accedido el 06 de mayo 2023.
+[3] J. L. Soto. “Alemania ya prueba los semáforos inteligentes”. Disponible en: https://motor.elpais.com/tecnologia/alemania-ya-prueba-los-semaforos-inteligentes/. Accedido el 06 de mayo 2023.
+
+
+
