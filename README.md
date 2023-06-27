@@ -101,6 +101,9 @@ El sistema se control se encarga de establecer los tiempos para el temporizador 
 
 ![DC_CONTROL](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/852a0a74-0c9b-441f-a605-909111a9b5a3)
 
+### Diagrama de flujo
 
+![DF](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/8faaa101-05cb-47c8-8094-a378a52a1cc7)
 
-
+### Máquina de estados:
+![FSM](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/59e102d9-f9bb-44cc-8967-53c4e6e2aa6c)
