@@ -74,30 +74,30 @@ Implementar un sistema digital semiautomático para control de tráfico que redu
 
 ## Diagramas :chart_with_upwards_trend:
 ### Diagrama de caja negra general:
-![](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/94d84d1d-f6a4-4804-87c7-56a65f1f6616)
+![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/DCN_G.png)
 El sistema digital tiene como principio de funcionamiento detectar el nivel de tráfico presente en la vía gracias al sensor de ultrasonido, es por ello que se hace valer de un subsistema denominado "Detección" el cual relaciona un rango de distancia para el cual se detecta un vehiculo, posteriormente se evalúa el tiempo en el que dicho vehiculo se mantiene estático mediante el uso de un contador el cual enviá una señal lógica de 1 al sistema de control cuando el tiempo supera los 5 segundos. Por otro el pulsador destinado a los peatones envia una señal lógica de 1 directamente al sistema de control cuando es pulsado. El sistema de control evalúa las señales de entrada provenientes de el sensor y el pulsador para determinar los tiempos de cambio de estado del semáforo de los cuales se encargará el temporizador para que así sean visibles mediante los display 7 segmentos. A continuación se muestra los subsistemas que conforman del diagrama de caja negra general:
-![DC_GENERAL](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/73d99e0d-7977-4729-a190-00d5f20c4608)
+![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/DC_GENERAL.png)
 
 ### Detección
 El sistema se conforma de un divisor de frecuencia a 1 kHz, un contador y un comparador. El divisor de frecuencia se ocupa de convertir la frecuencia del reloj de la FPGA de 50 MHz a una frecuencia de 1 kHz con el propósito de manejar una escala de tiempo de milisegundos para el siguiente sistema que es el contador, de esta forma se facilitan los cálculos para la velocidad de la onda emitida por la señal echo y así establecer un rango de distancia para el cual el sensor debe detectar un vehículo, de esta forma el contador aumenta su valor y cuando detecta un obstáculo envia el valor de la distancia medida a un comparador que establece una salida solo cuando dicha distancia es menor a la establecida.
 
-![DC_DETECCIÓN](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/6b384de4-a448-44c4-a05a-f22d2d1751cc)
+![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/DC_DETECCI%C3%93N.png)
 
 ### Contador
 Diseñado principalmente para establecer un tiempo de 5 segundos durante el cual el sensor se mantiene activo y de esta forma confirmar el estado estático de un vehículo, de esta forma se puede interpretar el nivel de tráfico de acuerdo a la distancia a la cual se ubica el sensor respecto del semáforo, el tiempo se define mediante un contador asíncrono de 3 flip flops y un reset establecido en el numero binario 101 como se muestra a continuación.
-![DC_CONTADOR](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/9ef75346-16eb-4fc1-85d2-2c4d3a560436)
+![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/DC_CONTADOR.png)
 
-![ESQ_CONTADOR](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/288c5324-b154-4324-8483-17b12cdc340c)
+![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/ESQ_CONTADOR.png)
 
 ### Temporizador
 Se encarga de establecer los tiempos correspondientes a los cambios del semáforo tanto de peatones como de vehículos y decodificarlos para que puedan ser visibles mediante los display 7 segmentos, el sitema se conforma de un divisor de frecuencia para el clk, un contador descendente con 6 flip flops, 3 asignados para cada dígito, un codificador de binario a BCD, un multiplexor que recibe una señal de control sincronizada a 1 Hz, un codificador BCD a 7 segmentos y los dos display.
 
-![DC_TEMPORIZADOR](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/dd7e54ae-4507-47d0-aff2-ad8bafe0a7c9)
+![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/DC_TEMPORIZADOR.png)
 
 ### Control
 El sistema se control se encarga de establecer los tiempos para el temporizador y a su vez, evalúa el tiempo actual en el que se encuentran para determinar una decisión en los cambios de leds para los semáforos, el incrementador se encarga de aumentar el tiempo durante el cual el semáforo de los vehículos se encuentra en verde
 
-![DC_CONTROL](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/852a0a74-0c9b-441f-a605-909111a9b5a3)
+![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/DC_CONTROL.png)
 
 ### Diagrama de flujo
 Tiempo --- T
@@ -113,10 +113,10 @@ Led rojo vehiculos --- R;
 Led verde peatones --- VP;
 Led rojo peatones --- RP;
 
-![DF](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/8faaa101-05cb-47c8-8094-a378a52a1cc7)
+![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/DF.png)
 
 ### Máquina de estados:
-![FSM](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/59e102d9-f9bb-44cc-8967-53c4e6e2aa6c)
+![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/FSM.jpg)
 ## Implementación 
 
 https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/e7e44680-768e-478b-9a09-25c495a67b71
