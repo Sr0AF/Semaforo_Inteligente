@@ -119,15 +119,7 @@ Led rojo peatones --- RP;
 ![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/FSM.jpg)
 ## Implementación 
 
-https://youtu.be/jd3Qj-iQI9Q
-
-https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/f46b4684-0581-46bf-adfa-3d8f5e8bb2ae
-
-https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/81bf438a-7b2d-41cd-a227-1e080d8db073
-
-https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/dae94fed-a89a-4c39-aca9-cb55cbb4752a
-
-https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/52f14d36-52af-4258-9634-29a04fe88678
+https://youtu.be/jF7wOgj69VY
 
 ## Referencias
 
