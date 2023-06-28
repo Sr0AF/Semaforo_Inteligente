@@ -117,6 +117,9 @@ Led rojo peatones --- RP;
 
 ### Máquina de estados:
 ![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/FSM_1.jpg)
+### Circuito de FSM:
+![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/ESQ_CIRC.jpeg)
+
 ## Implementación 
 
 https://youtu.be/jF7wOgj69VY
