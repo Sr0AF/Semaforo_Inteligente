@@ -1,5 +1,5 @@
 # *Semáforo_Inteligente*
-![SEMÁFORO INTELIGENTE (1)](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/e0a9e894-0962-451f-927e-ded29dadb078)
+![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/SEM%C3%81FORO%20INTELIGENTE_.png)
 
 - Proyecto - Electrónica Digital I
 - Profesor : Diego Alexander Tibaduiza Burgos
@@ -74,7 +74,7 @@ Implementar un sistema digital semiautomático para control de tráfico que redu
 
 ## Diagramas :chart_with_upwards_trend:
 ### Diagrama de caja negra general:
-![Diagrama en blanco (1)](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/94d84d1d-f6a4-4804-87c7-56a65f1f6616)
+![](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/94d84d1d-f6a4-4804-87c7-56a65f1f6616)
 El sistema digital tiene como principio de funcionamiento detectar el nivel de tráfico presente en la vía gracias al sensor de ultrasonido, es por ello que se hace valer de un subsistema denominado "Detección" el cual relaciona un rango de distancia para el cual se detecta un vehiculo, posteriormente se evalúa el tiempo en el que dicho vehiculo se mantiene estático mediante el uso de un contador el cual enviá una señal lógica de 1 al sistema de control cuando el tiempo supera los 5 segundos. Por otro el pulsador destinado a los peatones envia una señal lógica de 1 directamente al sistema de control cuando es pulsado. El sistema de control evalúa las señales de entrada provenientes de el sensor y el pulsador para determinar los tiempos de cambio de estado del semáforo de los cuales se encargará el temporizador para que así sean visibles mediante los display 7 segmentos. A continuación se muestra los subsistemas que conforman del diagrama de caja negra general:
 ![DC_GENERAL](https://github.com/Sr0AF/Semaforo_Inteligente/assets/117313560/73d99e0d-7977-4729-a190-00d5f20c4608)
 
