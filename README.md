@@ -116,7 +116,7 @@ Led rojo peatones --- RP;
 ![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/DF.png)
 
 ### Máquina de estados:
-![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/FSM.jpg)
+![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/FSM_1.jpg)
 ## Implementación 
 
 https://youtu.be/jF7wOgj69VY
