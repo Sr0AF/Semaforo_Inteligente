@@ -119,8 +119,20 @@ Led rojo peatones --- RP;
 ![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/FSM_1.jpg)
 ### Circuito de FSM:
 ![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/ESQ_CIRC.jpeg)
+
+A partir de la máquina de estados podemos ver que tenemos 3 estados (00-01-10) los cuales dependen de 3 entradas (00-10-10) respetivamente (Estado 11 y entrado 11 nulos).
+
+Donde el estado 00 se refiere a un estado de funcionamiento "normal" del semáforo donde se le asigna S=0 (salida inactiva),  el cual depende directamente de la entrada 00 la cual presenta ciertas condiciones para actuar que se encuentran mencionadas en el esquemático así como también el funcionamiento del semáforo en dicho estado 00.
+
+Para el estado 01 y 10 nos podemos referir como a un estado "no normal" del semáforo en donde sus condiciones normales cambian dependiendo de la entrada (01 ó 10), con el fin de lograr un flujo más efectivo ya sea de peatones o de carros, para estos estados asignamos una salida S=1. En el esquemático también se presentan las condiciones de entrada de 10 y 01 así como los cambios en el funcionamiento del semáforo según el estado.
+
 ### Simulación FSM:
 ![](https://github.com/Sr0AF/Semaforo_Inteligente/blob/main/IMG/Sim.jpeg)
+
+
+La simulación se hizo a muy grandes rasgos con el fin de simplificar al máximo la lógica del circuito en donde básicamente tenemos que al tener las entradas 00 y 11 la salida S es igual a 0 (lo cual por parte del 00 se refiere a funcionamiento normal del semáforo). Y por otra parte tenemos que las entradas 01 y 10 hacen que la salida S sea igual a uno lo cual se refiere como anteriormente se mencionó a un funcionamiento “no normal” del semáforo.
+
+
 ## Implementación 
 
 https://youtu.be/jF7wOgj69VY
